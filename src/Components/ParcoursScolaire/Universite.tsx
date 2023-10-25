@@ -45,7 +45,7 @@ export default function Universite() {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Typography fontWeight={'bold'}>Université (2019-2023)</Typography>
-                    <img width={'50%'} src='images/logo_uds.jpg'></img>
+                    <img width={'50%'} src='images/logo_uds.jpg' alt="Logo de l'université de Sherbrooke"></img>
                 </TimelineContent>
             </TimelineItem>
         </>

@@ -25,7 +25,7 @@ export default function IntactIntegration() {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Typography fontWeight="bold">Stage en intégration des logiciels chez Intact (Été 2021 - Temps partiel automne 2021)</Typography>
-                    <img width={'20%'} src='images/Intact.jpg'></img>
+                    <img width={'20%'} src='images/Intact.jpg' alt="Logo d'intact"></img>
                 </TimelineContent>
             </TimelineItem>
         </>

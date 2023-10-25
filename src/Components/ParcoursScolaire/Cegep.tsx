@@ -24,7 +24,7 @@ export default function Cegep() {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Typography fontWeight="bold">Cégep (2017-2019)</Typography>
-                    <img src='images/logo-champlain-college.png'></img>
+                    <img src='images/logo-champlain-college.png' alt="Logo de Champlain"></img>
                 </TimelineContent>
             </TimelineItem>
         </>

@@ -27,7 +27,7 @@ export default function IntactMaintenance() {
                 </TimelineSeparator>
                 <TimelineContent>
                     <Typography fontWeight="bold">Stage en maintenance des logiciels chez Intact (Automne 2020)</Typography>
-                    <img width={'20%'} src='images/Intact.jpg'></img>
+                    <img width={'20%'} src='images/Intact.jpg' alt="Logo d'intact"></img>
                 </TimelineContent>
             </TimelineItem>
         </>

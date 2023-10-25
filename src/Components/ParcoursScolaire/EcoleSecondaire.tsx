@@ -27,7 +27,7 @@ export default function EcoleSecondaire() {
                         École Secondaire (2012-2017)
                     </Typography>
                     <Box width={'100%'}>
-                        <img width={'50%'} src="images/image_trinite.jpg" alt="Description of your image" />
+                        <img width={'50%'} src="images/image_trinite.jpg" alt="L'école Trinité" />
                     </Box>
                 </TimelineContent>
             </TimelineItem>
