@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Contact from './Components/Contact';
+import Navbar from './Components/Navbar';
+import ParcoursProfessionnel from './Components/ParcoursProfesionnel/ParcoursProfessionnel';
+import ParcoursScolaire from './Components/ParcoursScolaire/ParcoursScolaire';
 
-function App() {
+interface Props {
+  window?: () => Window;
+}
+
+function App(props: Props) {
+  const [selectedItem, setSelectedItem] = useState("");
+
+  const handleItemSelected = (selectedItem: string) => {
+    console.log(`Selected item: ${selectedItem}`);
+    setSelectedItem(selectedItem);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Navbar selectedItem={handleItemSelected} {...props} />
+      {selectedItem === "" && <ParcoursScolaire />}
+      {selectedItem === "Parcours Scolaire" && <ParcoursScolaire />}
+      {selectedItem === "Parcours Professionnel" && <ParcoursProfessionnel />}
+      {selectedItem === "Contactez-moi" && <Contact />}
+
+    </main>
   );
 }
 
